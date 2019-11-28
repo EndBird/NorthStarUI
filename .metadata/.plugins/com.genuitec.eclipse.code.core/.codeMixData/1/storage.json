@@ -1,0 +1,14 @@
+{
+    "telemetry.machineId": "3a4062429acb6e797370fecb73b17c65ba58693c4db7b87c32a871fd9d24d277",
+    "openedPathsList": {
+        "workspaces3": [
+            {
+                "id": "73a83dc4406f3785e1bb74bb5028eb3e",
+                "configURIPath": "file:///c%3A/Users/mlh27/NorthStarUI/frontend/my-app/.metadata/codemix.code-workspace"
+            }
+        ],
+        "files2": []
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#221a0f"
+}

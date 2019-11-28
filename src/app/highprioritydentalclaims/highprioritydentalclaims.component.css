@@ -1,0 +1,33 @@
+ 
+ table {
+ border-collapse: collapse;
+  width: 100%;
+  
+}
+
+td, th {
+  border: 1px solid #dddddd;
+ 
+  text-align: left;
+
+  padding: 8px;
+}
+tr:hover, a:active{
+	background-color: lightgray; 
+}
+tr {
+	 border-left:  5px solid #dddddd;
+	 
+}
+
+tr:nth-child(even) {
+  background-color: #f2eded;
+}
+
+.claim-score {
+	background-color: #e8bce2;
+}
+
+.claim-scorelow {
+	background-color: #9ed9b7;
+}

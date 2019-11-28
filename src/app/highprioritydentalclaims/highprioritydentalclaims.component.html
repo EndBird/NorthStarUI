@@ -1,0 +1,28 @@
+<table border = "1" cellpadding = "5" cellspacing = "5" width = "100%" max-height = "100%">
+         <tr>
+            <th>Claims</th>
+             <th>Score</th>
+            <th>Date</th>
+            
+         </tr>
+         <tr  [routerLink]="['/claimreport']" (mouseover)="changecolour(oddclaim)" (mouseleave)="removecolour(oddclaim)" #oddclaim>
+            <td><a  ><span class="claim-description">Tooth surgery</span></a></td>
+            <td  class="claim-score"><span>95%</span></td>
+            <td><span class="claim-description">2019-02-22</span></td>
+            
+         </tr>
+         <tr  [routerLink]="['/claimreport']" >
+            <td><a  [routerLink]="['/claimreport']"  ><span class="claim-description">Cavity Filling</span></a></td>
+            <td  class="claim-score"><span>55%</span></td>
+            <td><span class="claim-description">2019-03-12</span></td>
+            
+         </tr>
+
+         <tr  [routerLink]="['/claimreport']" (mouseover)="changecolour(oddclaim1)" (mouseleave)="removecolour(oddclaim1)" #oddclaim1>
+            <td><a  [routerLink]="['/claimreport']"  ><span class="claim-description">Cavity Filling</span></a></td>
+            <td  class="claim-scorelow"><span>25%</span></td>
+            <td><span class="claim-description">2019-04-12</span></td>
+            
+         </tr>
+      </table>
+

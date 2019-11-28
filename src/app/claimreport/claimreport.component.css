@@ -1,0 +1,104 @@
+tr th {
+
+	font-style: normal;
+	font-size: 20px;
+	
+}
+
+
+
+th {vertical-align: bottom;}
+
+
+#claimreportOverviewContainer table {
+	position: absolute;
+	border-style: solid;
+	border-collapse: separate;
+	border-width: 1px;
+	border-radius: 5px;
+	 width: 350px;
+	 padding: 10px;
+		
+}
+
+td {
+	border-bottom: 1px dotted grey;
+	
+	
+}
+
+.cellContent {
+	position: relative;
+	display: inline;
+	top: 5px;
+	background-color: white;
+}
+
+
+
+.col2 {
+	text-align: right;
+}
+
+#claimreportOverviewContainer {
+	position: absolute;
+	
+	top: 10%;
+	left: 2%;
+	width: 800px;
+	height: 400px;
+	border-style: none;
+}
+
+#policyTable {
+	position: absolute;
+	bottom: 0%;
+}
+
+#firstPartyTable {
+	position: absolute;
+	top: 0%;
+	right: 0%;
+
+}
+
+#thirdPartyTable {
+	position: absolute;
+	top:200px;
+	right: 0%;
+
+}
+
+#claimAmountTable {
+	position: absolute;
+	bottom:0%;
+	right: 0%;
+}
+
+.SuspicionsSection {
+	position: absolute;
+	top: 500px;
+	width: 800px;
+	left: 2%;
+}
+
+.SuspicionsSection tr:nth-child(even) {
+  background-color: #f2eded;
+
+}
+
+.SuspicionsSection table {
+ border-collapse: collapse;
+ 
+  width: 100%;
+ 
+  
+}
+
+.SuspicionsSection td, .SuspicionsSection th {
+  border: 1px solid #dddddd;
+ 
+  text-align: left;
+
+  padding: 8px;
+}

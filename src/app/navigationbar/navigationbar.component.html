@@ -1,0 +1,33 @@
+<mat-toolbar>  
+  
+  <div id="logo">
+     <img src="..\assets\logo.jpg">
+  </div>
+   
+ 
+ 
+  <mat-toolbar-row routerLink="/" (click) = "clickColours(homenav)" (mouseover)="changecolour(homenav)" (mouseleave) = "removecolour(homenav)" #homenav>
+   
+    <a mat-list-item class="nav-caption" >
+    Home
+  </a>
+    
+  </mat-toolbar-row>
+
+  <mat-toolbar-row  [routerLink]="['/dentalclaims']" (click) = "clickColours(dentalnav)" (mouseover)="changecolour(dentalnav)" (mouseleave) = "removecolour(dentalnav)" #dentalnav id="dental-nav">
+    <a mat-list-item  class="nav-caption">
+      Dental
+    </a >
+   
+  </mat-toolbar-row>
+  
+  
+</mat-toolbar>
+
+
+
+
+
+
+
+
