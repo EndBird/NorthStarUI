@@ -1,20 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { range } from 'rxjs';
 @Component({
   selector: 'app-highprioritydentalclaims',
   templateUrl: './highprioritydentalclaims.component.html',
   styleUrls: ['./highprioritydentalclaims.component.css']
 })
 export class HighprioritydentalclaimsComponent implements OnInit {
-
-  backendurl = "https://northstarai.herokuapp.com/getdata"
-
+  
+  backendurl = "https://cors-anywhere.herokuapp.com/https://northstarai.herokuapp.com/getdata"
+  numclaims = []
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
     this.http.get(this.backendurl).subscribe((data) => {
-        //DO STUFF HERE
-         console.log(data)
+        
+        var j;
+        for (j=0; j<(Math.floor(Number(data)/100)); j++) {
+         this.numclaims.push(j)
+        }
     }
 )
 

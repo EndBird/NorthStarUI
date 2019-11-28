@@ -24,10 +24,10 @@ tr:nth-child(even) {
   background-color: #f2eded;
 }
 
-.claim-score {
+tr:nth-child(odd) .claim-score{
 	background-color: #e8bce2;
 }
 
-.claim-scorelow {
+tr:nth-child(even) .claim-score:nth-child(even) {
 	background-color: #9ed9b7;
 }
