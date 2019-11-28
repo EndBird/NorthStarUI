@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HighprioritydentalclaimsComponent implements OnInit {
 
-  backendurl = "http://northstarai.herokuapp.com/getdata"
+  backendurl = "https://northstarai.herokuapp.com/getdata"
 
   constructor(private http: HttpClient) { }
 
