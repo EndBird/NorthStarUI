@@ -6,7 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule} from '@angular/material';
-
+import { HttpClientModule } from '@angular/common/http';
 import { NavigationbarComponent } from './navigationbar/navigationbar.component';
 import { WelcomeviewComponent } from './welcomeview/welcomeview.component';
 import { DentalclaimsComponent } from './dentalclaims/dentalclaims.component';
@@ -24,7 +24,7 @@ import { ClaimreportComponent } from './claimreport/claimreport.component'
     ClaimreportComponent
   ],
   imports: [
-    BrowserModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule,
+    BrowserModule, MatToolbarModule, MatIconModule, MatSidenavModule,HttpClientModule, MatListModule,
      RouterModule.forRoot([{path: '', component: DashboardComponent}, {path: 'dentalclaims', component: DentalclaimsComponent},
     {path: 'highprioritydentalclaims', component: HighprioritydentalclaimsComponent}, 
     {path: 'claimreport', component: ClaimreportComponent}]),
