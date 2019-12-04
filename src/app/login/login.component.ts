@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
      this.http.get(backendurl).subscribe((data) => {
         var status = JSON.stringify(data)["status"]
        
-          this.router.navigate(['/dashboard'])
+          this.router.navigate(['dashboard'])
       
        
     }
