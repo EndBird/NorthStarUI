@@ -14,6 +14,23 @@ main {
 	
 	
 }
+
+main {
+	position: absolute;
+	
+	width: 85%;
+	height: 100%;
+	left: 15%;
+	
+}
+	
+
+app-navigationbar {
+	position: absolute;
+	width: 15%;
+	height: 100%;
+}
+
 	
 
 

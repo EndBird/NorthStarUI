@@ -27,7 +27,7 @@ import { LoginComponent } from './login/login.component'
   ],
   imports: [
     BrowserModule, MatToolbarModule, MatIconModule, MatSidenavModule,HttpClientModule, MatListModule,
-     RouterModule.forRoot([{path: 'dashboard', component: DashboardComponent}, {path: 'dentalclaims', component: DentalclaimsComponent},
+     RouterModule.forRoot([{path: '', component: DashboardComponent}, {path: 'dentalclaims', component: DentalclaimsComponent},
     {path: 'highprioritydentalclaims', component: HighprioritydentalclaimsComponent}, 
     {path: 'claimreport', component: ClaimreportComponent}]),
     BrowserAnimationsModule
