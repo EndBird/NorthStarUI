@@ -12,7 +12,7 @@ export class HighprioritydentalclaimsComponent implements OnInit {
   numclaims = []
   constructor(private http: HttpClient) {
 
-    
+
    }
 
   ngOnInit() {
@@ -24,6 +24,8 @@ export class HighprioritydentalclaimsComponent implements OnInit {
          this.numclaims.push(j)
 
         }
+        return this.numclaims
+
     }
 )
 
