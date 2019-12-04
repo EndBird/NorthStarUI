@@ -1,0 +1,17 @@
+tools:
+  exceptions: did not implement
+  logging: logdna (Julian said i went the page to install it so he would give me the marks, because actual installation requires credit card info)
+  ci: 
+
+services:
+  production: http://northstarui.herokuapp.com/
+  
+
+docs:
+  getting_started:for the frontend, the starting point app.component.html, from there <router-outlet> takes care of things
+  
+commands:
+  bootstrap: npm install. look at package.json to install dependencies
+  database:
+    the database is made by the backend in the app, and it is automatically put on heroku.  
+  server: nodemon server.js.  but i use angular ide to handle the job.  

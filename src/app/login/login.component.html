@@ -1,0 +1,22 @@
+<div>
+
+<img src="../assets/logo.jpg">
+<p>Welcome to NorthStar.AI</p>
+
+
+
+
+<form enctype="multipart/form-data">
+   <input type="text" placeholder="Enter Username" name="Username" #username><br>
+   <input type="text" placeholder="Enter Password" name="Password" #password><br>
+  
+   <input type="submit"  (click)="LogIn(username, password)" value="Log In" name="Log In">
+</form>
+
+ <button (click)="LogIn(username, password)">log in</button>
+
+
+
+
+
+</div>

@@ -11,7 +11,8 @@ import { NavigationbarComponent } from './navigationbar/navigationbar.component'
 import { WelcomeviewComponent } from './welcomeview/welcomeview.component';
 import { DentalclaimsComponent } from './dentalclaims/dentalclaims.component';
 import { HighprioritydentalclaimsComponent } from './highprioritydentalclaims/highprioritydentalclaims.component';
-import { ClaimreportComponent } from './claimreport/claimreport.component'
+import { ClaimreportComponent } from './claimreport/claimreport.component';
+import { LoginComponent } from './login/login.component'
 
 @NgModule({
   declarations: [
@@ -21,11 +22,12 @@ import { ClaimreportComponent } from './claimreport/claimreport.component'
     WelcomeviewComponent,
     DentalclaimsComponent,
     HighprioritydentalclaimsComponent,
-    ClaimreportComponent
+    ClaimreportComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule, MatToolbarModule, MatIconModule, MatSidenavModule,HttpClientModule, MatListModule,
-     RouterModule.forRoot([{path: '', component: DashboardComponent}, {path: 'dentalclaims', component: DentalclaimsComponent},
+     RouterModule.forRoot([{path: 'dashboard', component: DashboardComponent}, {path: 'dentalclaims', component: DentalclaimsComponent},
     {path: 'highprioritydentalclaims', component: HighprioritydentalclaimsComponent}, 
     {path: 'claimreport', component: ClaimreportComponent}]),
     BrowserAnimationsModule
