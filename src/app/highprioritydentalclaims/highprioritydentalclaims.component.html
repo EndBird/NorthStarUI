@@ -7,7 +7,7 @@
          </tr>
 
          
-         <tr   *ngFor="let claim of numclaims; let i=index" [routerLink]="['/claimreport']" (mouseover)="changecolour(this)" (mouseleave)="removecolour(this)" >
+         <tr *ngFor="let claim of numclaims; let i=index" [routerLink]="['/claimreport']" (mouseover)="changecolour(this)" (mouseleave)="removecolour(this)" >
             
             <td *ngIf="i%2!=0" ><a  ><span class="claim-description">Tooth surgery</span></a></td>
             <td  *ngIf="i%2!=0" class="claim-score"><span>95%</span></td>
@@ -16,7 +16,6 @@
             <td  *ngIf="i%2==0" class="claim-score"><span>25%</span></td>
             <td *ngIf="i%2==0"><span class="claim-description">2019-03-22</span></td>
             
-         </tr>
-       
-      </table>
+         </tr>      
+    </table>
 
