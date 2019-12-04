@@ -8,7 +8,7 @@ import { range } from 'rxjs';
 })
 export class HighprioritydentalclaimsComponent implements OnInit {
   
-  backendurl = "https://cors-anywhere.herokuapp.com/https://northstarai.herokuapp.com/getdata"
+  backendurl = "https://northstarai.herokuapp.com/getdata"
   numclaims = []
   constructor(private http: HttpClient) { }
 
