@@ -14,10 +14,11 @@ export class HighprioritydentalclaimsComponent implements OnInit {
 
   ngOnInit() {
     this.http.get(this.backendurl).subscribe((data) => {
-        
+        console.log(data)
         var j;
         for (j=0; j<(Math.floor(Number(data)/100)); j++) {
          this.numclaims.push(j)
+
         }
     }
 )
