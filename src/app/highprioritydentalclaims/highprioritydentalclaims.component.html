@@ -5,7 +5,20 @@
             <th>Date</th>
             
          </tr>
-
+         <tr [routerLink]="['/claimreport']" (mouseover)="changecolour(this)" (mouseleave)="removecolour(this)" >
+            
+            <td  ><a  ><span class="claim-description">Tooth surgery</span></a></td>
+            <td   class="claim-score"><span>95%</span></td>
+            <td ><span class="claim-description">2019-02-22</span></td> 
+         
+         </tr>
+          <tr [routerLink]="['/claimreport']" (mouseover)="changecolour(this)" (mouseleave)="removecolour(this)" >
+            
+            <td  ><a  ><span class="claim-description">Tooth surgery</span></a></td>
+            <td   class="claim-score"><span>25%</span></td>
+            <td ><span class="claim-description">2019-02-22</span></td> 
+         
+         </tr>
          
          <tr *ngFor="let claim of numclaims; let i=index" [routerLink]="['/claimreport']" (mouseover)="changecolour(this)" (mouseleave)="removecolour(this)" >
             
