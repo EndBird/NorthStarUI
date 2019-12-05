@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CommonModule } from '@angular/common';
+
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule} from '@angular/material';
@@ -26,7 +28,7 @@ import { LoginComponent } from './login/login.component'
     LoginComponent
   ],
   imports: [
-    BrowserModule, MatToolbarModule, MatIconModule, MatSidenavModule,HttpClientModule, MatListModule,
+    BrowserModule, CommonModule, MatToolbarModule, MatIconModule, MatSidenavModule,HttpClientModule, MatListModule,
      RouterModule.forRoot([{path: '', component: DashboardComponent}, {path: 'dentalclaims', component: DentalclaimsComponent},
     {path: 'highprioritydentalclaims', component: HighprioritydentalclaimsComponent}, 
     {path: 'claimreport', component: ClaimreportComponent}]),

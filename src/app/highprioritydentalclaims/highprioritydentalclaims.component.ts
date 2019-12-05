@@ -9,7 +9,7 @@ import { range } from 'rxjs';
 export class HighprioritydentalclaimsComponent implements OnInit {
   
   backendurl = "https://northstarai.herokuapp.com/getdata"
-  numclaims = []
+  numclaims = [1,2]
   constructor(private http: HttpClient) {
 
 
@@ -18,12 +18,13 @@ export class HighprioritydentalclaimsComponent implements OnInit {
   ngOnInit() {
     this.http.get(this.backendurl).subscribe((data) => {
         var j;
-       
-       
-        for (j=0; j<(Math.floor(Number(data)/100)); j++) {
-         this.numclaims.push(j)
 
+        var num = Number( (data)['numclaims'])/10
+        for (j = 0; j < num; j++) {
+         this.numclaims.push(j)
+          
         }
+        
         return this.numclaims
 
     }
