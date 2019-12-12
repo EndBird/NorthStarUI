@@ -1,7 +1,7 @@
 tr th {
 
 	font-style: normal;
-	font-size: 20px;
+	font-size: 2vw;
 	
 }
 
@@ -10,16 +10,7 @@ tr th {
 th {vertical-align: bottom;}
 
 
-#claimreportOverviewContainer table {
-	position: absolute;
-	border-style: solid;
-	border-collapse: separate;
-	border-width: 1px;
-	border-radius: 5px;
-	 width: 350px;
-	 padding: 10px;
-		
-}
+
 
 td {
 	border-bottom: 1px dotted grey;
@@ -40,14 +31,31 @@ td {
 	text-align: right;
 }
 
+.col1 {
+	text-align: left;
+}
+
 #claimreportOverviewContainer {
 	position: absolute;
 	
 	top: 10%;
 	left: 2%;
-	width: 800px;
+	width: 75%;
 	height: 400px;
 	border-style: none;
+}
+
+#claimreportOverviewContainer table {
+	position: absolute;
+	border-style: solid;
+	border-collapse: separate;
+	border-width: 1px;
+	border-radius: 5px;
+	 width: 40%;
+	 padding: 10px;
+	 font-size: 1vw;
+	 
+		
 }
 
 #policyTable {
@@ -78,7 +86,7 @@ td {
 .SuspicionsSection {
 	position: absolute;
 	top: 500px;
-	width: 800px;
+	width: 75%;
 	left: 2%;
 }
 

@@ -7,28 +7,28 @@
          </tr>
          <tr [routerLink]="['/claimreport']" (mouseover)="changecolour(this)" (mouseleave)="removecolour(this)" >
             
-            <td  ><a  ><span class="claim-description">Tooth surgery</span></a></td>
-            <td   class="claim-score"><span>95%</span></td>
-            <td ><span class="claim-description">2019-02-22</span></td> 
+            <td class="claim-descriptionCol" ><span class="claim-description">Tooth surgery</span></td>
+            <td class="claim-scoreCol"><span  class="claim-score">95%</span></td>
+            <td class="claim-descriptionCol"><span class="claim-description">2019-02-22</span></td> 
          
          </tr>
           <tr [routerLink]="['/claimreport']" (mouseover)="changecolour(this)" (mouseleave)="removecolour(this)" >
             
-            <td  ><a  ><span class="claim-description">Tooth surgery</span></a></td>
-            <td   class="claim-score"><span>25%</span></td>
-            <td ><span class="claim-description">2019-02-22</span></td> 
+            <td class="claim-descriptionCol" ><span class="claim-description">Tooth surgery</span></td>
+            <td class="claim-scoreCol" ><span  class="claim-score">25%</span></td>
+            <td class="claim-descriptionCol"><span class="claim-description">2019-02-22</span></td> 
          
          </tr>
          
          
          <tr *ngFor="let claim of numclaims; let i=index" [routerLink]="['/claimreport']" (mouseover)="changecolour(this)" (mouseleave)="removecolour(this)" >
             
-            <td *ngIf="i%2!=0" ><a  ><span class="claim-description">Tooth surgery</span></a></td>
-            <td  *ngIf="i%2!=0" class="claim-score"><span>95%</span></td>
-            <td *ngIf="i%2!=0"><span class="claim-description">2019-02-22</span></td>
-            <td *ngIf="i%2==0" ><a  ><span class="claim-description">Cavity Filling</span></a></td>
-            <td  *ngIf="i%2==0" class="claim-score"><span>25%</span></td>
-            <td *ngIf="i%2==0"><span class="claim-description">2019-03-22</span></td>
+            <td *ngIf="i%2!=0" class="claim-descriptionCol" ><span class="claim-description">Tooth surgery</span></td>
+            <td  *ngIf="i%2!=0" class="claim-scoreCol"><span  class="claim-score">95%</span></td>
+            <td *ngIf="i%2!=0" class="claim-descriptionCol"><span class="claim-description">2019-02-22</span></td>
+            <td *ngIf="i%2==0" class="claim-descriptionCol"><span class="claim-description">Cavity Filling</span></td>
+            <td  *ngIf="i%2==0" class="claim-scoreCol"><span class="claim-score">25%</span></td>
+            <td *ngIf="i%2==0" class="claim-descriptionCol"><span class="claim-description">2019-03-22</span></td>
             
          </tr>      
 </table>
