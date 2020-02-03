@@ -15,15 +15,9 @@ export class LoginComponent implements OnInit {
   }
 
   LogIn(username: HTMLInputElement, password: HTMLInputElement) {
-     var backendurl = "https://cors-anywhere.herokuapp.com/https://northstarai.herokuapp.com/login"
-     this.http.get(backendurl).subscribe((data) => {
-        var status = JSON.stringify(data)["status"]
-       
-          this.router.navigate(['dashboard'])
-      
-       
-    }
-    )
+     var backendurl = "https://northstarai.herokuapp.com/login"
+     
+    this.router.navigate(['dashboard'])
   }
 
 }

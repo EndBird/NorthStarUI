@@ -29,9 +29,17 @@ import { LoginComponent } from './login/login.component'
   ],
   imports: [
     BrowserModule, CommonModule, MatToolbarModule, MatIconModule, MatSidenavModule,HttpClientModule, MatListModule,
-     RouterModule.forRoot([{path: '', component: DashboardComponent}, {path: 'dentalclaims', component: DentalclaimsComponent},
-    {path: 'highprioritydentalclaims', component: HighprioritydentalclaimsComponent}, 
-    {path: 'claimreport', component: ClaimreportComponent}]),
+     RouterModule.forRoot([{path:'dashboard', component: DashboardComponent,
+    children: [
+      {path: '', redirectTo: 'welcomeview', pathMatch: 'full'},
+      {path: 'welcomeview', component: WelcomeviewComponent},
+      {path: 'dentalclaims', component: DentalclaimsComponent},
+      {path: 'highprioritydentalclaims', component: HighprioritydentalclaimsComponent},
+       {path: 'dentalclaims/highprioritydentalclaims/claimreport', component: ClaimreportComponent}
+    ]},
+    {path: '', component: LoginComponent}
+    
+    ]),
     BrowserAnimationsModule
   ],
   providers: [],

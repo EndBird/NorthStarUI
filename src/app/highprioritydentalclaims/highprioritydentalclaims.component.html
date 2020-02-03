@@ -5,14 +5,14 @@
             <th>Date</th>
             
          </tr>
-         <tr [routerLink]="['/claimreport']" (mouseover)="changecolour(this)" (mouseleave)="removecolour(this)" >
+         <tr [routerLink]="['./claimreport']" (mouseover)="changecolour(this)" (mouseleave)="removecolour(this)" >
             
             <td class="claim-descriptionCol" ><span class="claim-description">Tooth surgery</span></td>
             <td class="claim-scoreCol"><span  class="claim-score">95%</span></td>
             <td class="claim-descriptionCol"><span class="claim-description">2019-02-22</span></td> 
          
          </tr>
-          <tr [routerLink]="['/claimreport']" (mouseover)="changecolour(this)" (mouseleave)="removecolour(this)" >
+          <tr [routerLink]="['./claimreport']" (mouseover)="changecolour(this)" (mouseleave)="removecolour(this)" >
             
             <td class="claim-descriptionCol" ><span class="claim-description">Tooth surgery</span></td>
             <td class="claim-scoreCol" ><span  class="claim-score">25%</span></td>
@@ -21,7 +21,7 @@
          </tr>
          
          
-         <tr *ngFor="let claim of numclaims; let i=index" [routerLink]="['/claimreport']" (mouseover)="changecolour(this)" (mouseleave)="removecolour(this)" >
+         <tr *ngFor="let claim of numclaims; let i=index" [routerLink]="['./claimreport']" (mouseover)="changecolour(this)" (mouseleave)="removecolour(this)" >
             
             <td *ngIf="i%2!=0" class="claim-descriptionCol" ><span class="claim-description">Tooth surgery</span></td>
             <td  *ngIf="i%2!=0" class="claim-scoreCol"><span  class="claim-score">95%</span></td>

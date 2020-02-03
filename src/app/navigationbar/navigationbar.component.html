@@ -6,7 +6,7 @@
    
  
  
-  <mat-toolbar-row routerLink="/" (click) = "clickColours(homenav)" (mouseover)="changecolour(homenav)" (mouseleave) = "removecolour(homenav)" #homenav>
+  <mat-toolbar-row [routerLink]="['welcomeview']" (click) = "clickColours(homenav)" (mouseover)="changecolour(homenav)" (mouseleave) = "removecolour(homenav)" #homenav>
    
     <a mat-list-item class="nav-caption" >
     Home
@@ -14,14 +14,19 @@
     
   </mat-toolbar-row>
 
-  <mat-toolbar-row  [routerLink]="['/dentalclaims']" (click) = "clickColours(dentalnav)" (mouseover)="changecolour(dentalnav)" (mouseleave) = "removecolour(dentalnav)" #dentalnav id="dental-nav">
+  <mat-toolbar-row  [routerLink]="['dentalclaims']" (click) = "clickColours(dentalnav)" (mouseover)="changecolour(dentalnav)" (mouseleave) = "removecolour(dentalnav)" #dentalnav id="dental-nav">
     <a mat-list-item  class="nav-caption">
       Dental
     </a >
    
   </mat-toolbar-row>
   
-  
+  <mat-toolbar-row  [routerLink]="['.']" (click) = "clickColours(dentalnav)" (mouseover)="changecolour(dentalnav)" (mouseleave) = "removecolour(dentalnav)" #dentalnav id="dental-nav">
+    <a mat-list-item  class="nav-caption">
+      Sign Out
+    </a >
+   
+  </mat-toolbar-row>
 </mat-toolbar>
 
 

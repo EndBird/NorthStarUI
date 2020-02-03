@@ -1,10 +1,17 @@
-app-welcomeview {
+#UsersView {
 	position: absolute;
 	
-	width: 100%;
+	left: 15%;
+	width: 85%;
 	height: 100%;
 
 	
+}
+
+app-navigationbar {
+	position: absolute;
+	width: 15%;
+	height: 100%;
 }
 	
 
