@@ -34,7 +34,7 @@ import { LoginComponent } from './login/login.component'
       {path: '', redirectTo: 'welcomeview', pathMatch: 'full'},
       {path: 'welcomeview', component: WelcomeviewComponent},
       {path: 'dentalclaims', component: DentalclaimsComponent},
-      {path: 'highprioritydentalclaims', component: HighprioritydentalclaimsComponent},
+      {path: 'dentalclaims/highprioritydentalclaims', component: HighprioritydentalclaimsComponent},
        {path: 'dentalclaims/highprioritydentalclaims/claimreport', component: ClaimreportComponent}
     ]},
     {path: '', component: LoginComponent}
