@@ -1,6 +1,7 @@
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
+Check out my accompanying tutorial post dev.to: https://dev.to/endbird/css-how-to-display-information-with-separating-two-items-5637
 
 ## Development server
 
